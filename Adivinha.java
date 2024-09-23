@@ -19,11 +19,11 @@ public class Adivinha {
             if (numero !=randomizado) {
                 if (numero > randomizado) {
                     System.out.println("Esse numero é maior que #"  );
-                    System.out.println(randomizado - 10 <= numero ? "ESTÁ QUENTE" : "ESTÁ FRIO");} 
+                    System.out.println((randomizado + 10) >= numero ? "ESTÁ QUENTE" : "ESTÁ FRIO");} 
                 else if (numero < randomizado){
                     System.out.println("  ");
                     System.out.println("Esse numero é menor que #" );
-                    System.out.println(randomizado + 10 >= numero ? "ESTÁ QUENTE" : "ESTÁ FRIO");} 
+                    System.out.println((randomizado - 10) <= numero ? "ESTÁ QUENTE" : "ESTÁ FRIO");} 
             } else {
                 System.out.println("--------------------------------");
                 System.out.println("VOCÊ ACERTOUUUU,O numero era : "+ randomizado );
